@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Aya's Authentic</title>
+    <style>
+        /*Membuat Tulisan Berkedip*/
+        blink {
+          -webkit-animation: 2s linear infinite condemned_blink_effect;
+          animation: 1s linear infinite condemned_blink_effect;
+        }
+        @keyframes condemned_blink_effect {
+          0% {
+            visibility: hidden;
+          }
+          50% {
+            visibility: hidden;
+          }
+          100% {
+            visibility: visible;
+          }
+        }
+        th {
+            border-bottom: 1px solid black;
+        }
+        td {
+            padding: 0 10px;
+        }
+        img {
+            transition: 1s;
+            cursor: pointer;
+        }
+        img:hover {
+            transition: 1s;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Membuat bagian header untuk membungkus elemen nav dan juga jumbotron -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron" style="background-color: none;background-image: url('images/jumbotron.jpeg');">
+        </div>
+    </header>
+
+    <main>
+         <article class="card">
+            <center><h3>Catalog Aya's Authentic</h3></center>
+         </article>
+
+         <!-- Membuat 2 bagian, #content dan aside -->
+         <!-- Id content untuk kontent utama -->
+         <!-- aside untuk kontent di bagian samping -->
+        <div id="content">
+           
+
+            <article class="card">
+
+                <!-- Membuat tampilan elemenb menjadi flex atau terurut ke samping -->
+                <div style="display: flex;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/2.jpeg" alt="" width="150px">
+                            <h4>Coach High Top Sneakers</h4>
+                            <p><span class="harga">Rp3.609.000</span></p>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/1.jpeg" alt="" width="150px">
+                            <h4>Gucci Espadrilles In Beige</h4>
+                            <p><span class="harga">Rp4.149.000</span></p>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; padding-top: 100px;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/3.jpeg" alt="" width="150px">
+                            <h4>Coach C Coconut Court Backpack</h4>
+                            <p><span class="harga">Rp2.179.000</span></p>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/4.jpeg" alt="" width="150px">
+                            <h4>Kenzo Logo Bumbag Multicolor</h4>
+                            <p><span class="harga">Rp419.000</span></p>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; padding-top: 100px;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/5.jpeg" alt="" width="150px">
+                            <h4>Prada Bucket Hat In Black</h4>
+                            <p><span class="harga">Rp369.900</span></p>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/6.jpeg" alt="" width="150px">
+                            <h4>Gentle Monster Jack Bye</h4>
+                            <p><span class="harga">Rp244.900</span></p>
+                        </center>
+                    </div>
+
+                </div>
+
+
+                <div style="display: flex; padding-top: 100px;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/7.jpeg" alt="" width="150px">
+                            <h4>Tory Bruch Monogram jacquard Chain</h4>
+                            <p><span class="harga">Rp764.500</span></p>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/8.jpeg" alt="" width="150px">
+                            <h4>Coach X Koki Tabby Shoulder Bag</h4>
+                            <p><span class="harga">Rp530.000</span></p>
+                        </center>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <!-- Membuat logika jika di klik maka fungsi diskon() di javascript akan terpanggil -->
+            <a href="#" onclick="diskon();" style="text-decoration: none;">
+                <article class="card">
+                    <blink><p class="judul"><b>Klaim Voucher Diskon 75%!</b> <i class="fas fa-angle-left"></i></p></blink>
+                </article>
+            </a>
+
+            <article class="card">
+                <h3 class="judul">Privacy Policy</h3>
+                <p>The existence of this Privacy Policy is a real commitment of our Aya's Authentic to respect and protect every personal information of users of this site. This policy is a reference that regulates and protects the use of important data and information of users of this online store site, which has been collected when registering, accessing and using the services here, such as e-mail addresses, telephone numbers, photos, pictures, and others.</p>
+            </article>
+
+            <article class="card">
+                <h3 class="judul">Purchase Information</h3>
+                <center><a href="https://wa.me/62817398089" style="color: green;font-weight: bold;"><blink>+62 817-398-089</blink></a></center>
+            </article>
+        </aside>
+
+       
+    </main>
+
+    <footer>
+        <p>&#169 Aya's Authentic 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

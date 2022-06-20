@@ -1,0 +1,118 @@
+<?php 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Aya's Authentic</title>
+    <style>
+        /*Membuat Tulisan Berkedip*/
+        blink {
+          -webkit-animation: 2s linear infinite condemned_blink_effect;
+          animation: 1s linear infinite condemned_blink_effect;
+        }
+        @keyframes condemned_blink_effect {
+          0% {
+            visibility: hidden;
+          }
+          50% {
+            visibility: hidden;
+          }
+          100% {
+            visibility: visible;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Membuat bagian header untuk membungkus elemen nav dan juga jumbotron -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="katalog.html">Catalog</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron" style="background-color: none;background-image: url('images/jumbotron.jpeg');">
+        </div>
+    </header>
+
+    
+    <main>
+         <article>
+            <center>
+                <h3>Welcome to Aya's Authentic</h3>
+                <img src="images/logo.jpeg" alt="" width="300px" style="border-radius: 50%;">
+            </center>
+            <br><br>
+        </article>
+
+        <!-- Membuat 2 bagian, #content dan aside -->
+        <!-- Id content untuk kontent utama -->
+        <!-- aside untuk kontent di bagian samping -->
+        <div id="content">
+           
+
+            <article class="card">
+                <h4 class="judul">Enjoy Various Payment Methods : </h4>
+                <div style="display: flex;">
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/bni.PNG" alt="bni" width="25%">
+                            <p><span style="color:royalblue;">03112327362</span> Aya's Authentic</p>
+                        </center>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/mandiri.PNG" alt="mandiri" width="25%">
+                            <p><span style="color:royalblue;">03112327362</span> Aya's Authentic</p>
+                        </center>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <h4 class="judul">With Various Delivery Services :</h4>
+                <br>
+                <center>
+                    <img src="images/j&t.PNG" alt="j&t" width="25%">
+                    <br><br>
+                    <br>
+                </center>
+                <center>
+                    <img src="images/jne.PNG" alt="jne" width="25%">
+                    <br>
+                    <br>
+                </center>
+                <center>
+                    <img src="images/lion.PNG" alt="lion" width="25%">
+                </center>
+            </article>
+        </div>
+
+        <aside>
+            <!-- Membuat logika jika di klik maka fungsi welcome() yang ada di javascript akan terpanggil -->
+            <a href="#" onclick="welcome();" style="text-decoration: none;">
+                <article class="card">
+                    <blink><p class="judul"><b>Product Catalog</b> <i class="fas fa-angle-left"></i></p></blink>
+                </article>
+            </a>
+
+            <article class="card">
+                <h3 class="judul">Privacy Policy</h3>
+                <p>The existence of this Privacy Policy is a real commitment of our Aya's Authentic to respect and protect every personal information of users of this site. This policy is a reference that regulates and protects the use of important data and information of users of this online store site, which has been collected when registering, accessing and using the services here, such as e-mail addresses, telephone numbers, photos, pictures, and others.</p>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&#169 Aya's Authentic 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
